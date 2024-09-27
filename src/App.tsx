@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Header>Investment calculator</Header>
-      <UserInput></UserInput>
+      <UserInput calculate={(e) => console.log(e)}></UserInput>
     </>
   );
 }

@@ -6,10 +6,10 @@ interface Props {
 
 const Header = ({ children }: Props) => {
   return (
-    <div id="header">
+    <section id="header">
       <img src={Logo} alt="Logo" />
       <h1>{children}</h1>
-    </div>
+    </section>
   );
 };
 

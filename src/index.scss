@@ -29,11 +29,16 @@ body {
 }
 
 #user-input {
-  padding: 1rem;
+  padding: 1rem 2rem;
   max-width: 30rem;
   margin: 2rem auto;
   border-radius: 4px;
   background: linear-gradient(180deg, #307e6c, #2b996d);
+  .input-group {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+  }
   label {
     display: block;
     margin-bottom: 0.25rem;
@@ -51,12 +56,6 @@ body {
     color: #c2e9e0;
     font-size: 1rem;
   }
-}
-
-.input-group {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 1.5rem;
 }
 
 #result {

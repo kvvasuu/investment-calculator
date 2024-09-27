@@ -5,7 +5,14 @@
 // - expectedReturn: The expected (annual) rate of return
 // - duration: The investment duration (time frame)
 
-interface Arguments {
+export interface Results {
+  year: number;
+  interest: number;
+  valueEndOfYear: number;
+  annualInvestment: number;
+}
+
+export interface Arguments {
   initialInvestment: number;
   annualInvestment: number;
   expectedReturn: number;
@@ -18,7 +25,7 @@ export function calculateInvestmentResults({
   expectedReturn,
   duration,
 }: Arguments) {
-  const annualData = [];
+  const annualData = <Results[]>[];
   let investmentValue = initialInvestment;
 
   for (let i = 0; i < duration; i++) {

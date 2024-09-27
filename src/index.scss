@@ -12,6 +12,8 @@ body {
   background: radial-gradient(#303b37, #1a1f1d);
   color: #e1eeeb;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 #header {
@@ -73,6 +75,12 @@ body {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 0.85rem;
     color: #c2e9e0;
+  }
+  tr {
+    height: 2rem;
+  }
+  td {
+    padding: 0 1rem;
   }
 }
 

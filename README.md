@@ -1,6 +1,6 @@
 # Investment Calculator
 
-This is an **Investment Calculator** built with **React**, **TypeScript**, and **Vite**. The project is part of the Udemy course ["React - The Complete Guide 2024 (incl. Next.js, Redux)"](https://www.udemy.com/course/react-the-complete-guide-incl-redux/), but with an upgrade to TypeScript for better type safety.
+This is an **Investment Calculator** built with **React**, **TypeScript**, and **Vite**. The project is part of the Udemy course ["React - The Complete Guide 2024 (incl. Next.js, Redux)"](https://www.udemy.com/course/react-the-complete-guide-incl-redux), but with an upgrade to TypeScript for better type safety.
 
 ## Features
 - Calculate the growth of investments over time

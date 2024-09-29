@@ -4,6 +4,8 @@ import {
   calculateInvestmentResults,
 } from "../util/investment";
 
+import "./ResultList.scss";
+
 interface Props {
   inputs: Arguments;
 }

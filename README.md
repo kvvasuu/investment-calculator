@@ -1,50 +1,30 @@
-# React + TypeScript + Vite
+# Investment Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an **Investment Calculator** built with **React**, **TypeScript**, and **Vite**. The project is part of the Udemy course ["React - The Complete Guide 2024 (incl. Next.js, Redux)"](https://www.udemy.com/course/react-the-complete-guide-incl-redux), but with an upgrade to TypeScript for better type safety.
 
-Currently, two official plugins are available:
+## Features
+- Calculate the growth of investments over time
+- Real-time result updates based on input values
+- Built with TypeScript for type safety
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Setup
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
 ```
+# install dependencies
+npm install
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+# serve with hot reload at localhost:5173
+npm run dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+# build for production with minification
+npm run build
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
 ```

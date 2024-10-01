@@ -1,7 +1,5 @@
 import { Arguments } from "../util/investment";
 
-import CustomInput from "./CustomInput";
-
 interface Props {
   calculate: (valueName: string, value: number) => void;
   inputs: Arguments;

@@ -1,5 +1,5 @@
 import Logo from "../assets/investment-calculator-logo.png";
-
+import "./Header.scss";
 interface Props {
   children: string;
 }

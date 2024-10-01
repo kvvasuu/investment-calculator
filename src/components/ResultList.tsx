@@ -4,6 +4,32 @@ import {
   calculateInvestmentResults,
 } from "../util/investment";
 
+import { styled } from "styled-components";
+
+const Table = styled.section`
+  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  table-layout: fixed;
+  border-spacing: 1rem;
+  text-align: right;
+  & thead {
+    font-size: 0.7rem;
+    color: #83e6c0;
+  }
+  & tbody {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 0.85rem;
+    color: #c2e9e0;
+  }
+  & tr {
+    height: 2rem;
+  }
+  & td {
+    padding: 0 1rem;
+  }
+`;
+
 interface Props {
   inputs: Arguments;
 }
@@ -11,9 +37,9 @@ interface Props {
 const ResultList = ({ inputs }: Props) => {
   if (inputs.duration < 1) {
     return (
-      <section id="result">
+      <Table>
         <p className="center">Please enter a duration greater than zero.</p>
-      </section>
+      </Table>
     );
   }
 
@@ -25,7 +51,7 @@ const ResultList = ({ inputs }: Props) => {
     results[0].annualInvestment;
 
   return (
-    <section id="result">
+    <Table>
       <table>
         <thead>
           <tr>
@@ -55,7 +81,7 @@ const ResultList = ({ inputs }: Props) => {
           })}
         </tbody>
       </table>
-    </section>
+    </Table>
   );
 };
 

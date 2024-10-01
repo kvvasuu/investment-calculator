@@ -1,10 +1,6 @@
 import Logo from "../assets/investment-calculator-logo.png";
-import "./Header.scss";
-interface Props {
-  children: string;
-}
 
-const Header = ({ children }: Props) => {
+const Header = ({ children }: { children: string }) => {
   return (
     <section id="header">
       <img src={Logo} alt="Logo" />
